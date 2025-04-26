@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Microservices Serverless App</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Product Entry</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 300px;
+    }
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>🚀 Welcome to Serverless Microservices Frontend</h1>
-    <p>Interact with your microservices through this beautiful black-themed frontend.</p>
+  <h1>Add a Product</h1>
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required><br>
+    <input type="text" id="price" placeholder="Product Price" required><br>
+    <button type="submit">Add Product</button>
+  </form>
 
-    <button onclick="fetchData()">Get Microservices Data</button>
+  <script>
+    document.getElementById('productForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
 
-    <div id="output"></div>
+      const name = document.getElementById('name').value;
+      const price = document.getElementById('price').value;
 
-    <script src="script.js"></script>
+      const response = await fetch('/add-product', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, price })
+      });
+
+      if (response.ok) {
+        alert('✅ Product added successfully!');
+        document.getElementById('productForm').reset();
+      } else {
+        alert('❌ Failed to add product.');
+      }
+    });
+  </script>
 </body>
 </html>
