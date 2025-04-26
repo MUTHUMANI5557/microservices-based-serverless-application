@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microservices Serverless App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🚀 Welcome to Serverless Microservices Frontend</h1>
+    <p>Interact with your microservices through this beautiful black-themed frontend.</p>
+
+    <button onclick="fetchData()">Get Microservices Data</button>
+
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
