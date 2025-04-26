@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product-Dealer List</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1d1d1d, #0f2027);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #141414;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00c6ff;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background-color: #00c6ff;
+      color: black;
+      font-size: 1.2rem;
+    }
+
+    tr:hover {
+      background-color: rgba(0, 198, 255, 0.2);
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00c6ff;
+      color: black;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background: #0072ff;
+    }
+  </style>
+</head>
+<body>
+
+<header>Product - Dealer Listing</header>
+
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Dealer Name</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SuperWidget 3000</td>
+        <td>Alpha Distributors</td>
+        <td>New York, USA</td>
+      </tr>
+      <tr>
+        <td>HyperGadget X</td>
+        <td>Beta Supplies</td>
+        <td>Toronto, Canada</td>
+      </tr>
+      <tr>
+        <td>UltraTech Gear</td>
+        <td>Gamma Traders</td>
+        <td>London, UK</td>
+      </tr>
+      <!-- You can add dynamic rows here using JavaScript if connected to backend -->
+    </tbody>
+  </table>
+
+  <a class="btn-back" href="/homepage.html">← Back to Home</a>
+</div>
+
+</body>
+</html>
