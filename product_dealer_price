@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Dealer Price</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #121212;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00ff99;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background-color: #00ff99;
+      color: black;
+      font-size: 1.2rem;
+    }
+
+    tr:hover {
+      background-color: rgba(0, 255, 153, 0.2);
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00ff99;
+      color: black;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background: #00cc7a;
+    }
+  </style>
+</head>
+<body>
+
+<header>Product - Dealer - Price</header>
+
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Dealer Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SuperWidget 3000</td>
+        <td>Alpha Distributors</td>
+        <td>$499</td>
+      </tr>
+      <tr>
+        <td>HyperGadget X</td>
+        <td>Beta Supplies</td>
+        <td>$299</td>
+      </tr>
+      <tr>
+        <td>UltraTech Gear</td>
+        <td>Gamma Traders</td>
+        <td>$799</td>
+      </tr>
+      <!-- You can make it dynamic using JavaScript fetching from backend -->
+    </tbody>
+  </table>
+
+  <a class="btn-back" href="/homepage.html">← Back to Home</a>
+</div>
+
+</body>
+</html>
